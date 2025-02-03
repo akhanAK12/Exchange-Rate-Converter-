@@ -1,0 +1,36 @@
+<!-- The HTML code (index.html) contains the markup for the currency exchange converter. 
+It includes an input field for entering the amount, a select dropdown for choosing the currency, and a button to initiate the conversion. 
+The results of the conversion will be displayed in the "results" div. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Currency Exchange Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src = "exchange.js"></script>
+</head>
+<body>
+    <h1>Exchange Rate Converter</h1>
+    <input type="number" id="amount" placeholder="Enter Amount"/> <!-- Input where user can enter in amount-->
+    <!--Drop down menu-->
+    <select id="currency">
+        <option disabled selected>Currency</option>
+        <option value="EUR">EUR</option>
+        <option value="INR">INR</option>
+        <option value="CAD">CAD</option>
+        <option value="GBP">GBP</option>    
+        <option value="AUD">AUD</option>
+        <option value="JPY">JPY</option>
+    </select>
+
+    <button type = "button" id = "converter">Convert Selected Currency</button> <!--Button-->
+    <div id = "results"></div> 
+    <!--The id attribute is used to give a unique identifier to an element. 
+        The id attribute provides a way to uniquely identify a specific element within an HTML document.-->
+</body>
+</html>
+
+
+<!-- The extension manifest file (manifest.json) contains the necessary information about the extension, such as its name, version, and description. 
+It also specifies the default icon and popup page for the extension. -->
